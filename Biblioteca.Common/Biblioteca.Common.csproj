@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Log4Net_Logging" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Aplicacion.Contracts\Biblioteca.Aplicacion.Contracts.csproj" />
+    <ProjectReference Include="..\Biblioteca.Aplicacion\Biblioteca.Aplicacion.csproj" />
+    <ProjectReference Include="..\Biblioteca.DataAcces.Contracts\Biblioteca.DataAcces.Contracts.csproj" />
+    <ProjectReference Include="..\Biblioteca.DataAcces\Biblioteca.DataAcces.csproj" />
+  </ItemGroup>
+
+</Project>

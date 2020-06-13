@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "8ca95961-0df3-4a6f-90c2-216c4736e1d2",
+		"name": "prueba api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:58034/api/Autor?id=1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1"
+				},
+				"url": {
+					"raw": "http://localhost:58034/api/Autor?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58034",
+					"path": [
+						"api",
+						"Autor"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:58034/api/Autor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {    \r\n       \"idAutor\": 1,\r\n        \"nombre\": \"Daniel\",\r\n        \"apellido\": \"saavedra\",\r\n        \"fechaNacimiento\": \"1988-10-10\"\r\n        \r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:58034/api/Autor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58034",
+					"path": [
+						"api",
+						"Autor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:58034/api/Autor?c",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {    \r\n       \"idAutor\": 0,\r\n        \"nombre\": \"Marcela\",\r\n        \"apellido\": \"marin\",\r\n        \"fechaNacimiento\": \"2012-10-10\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:58034/api/Autor?c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58034",
+					"path": [
+						"api",
+						"Autor"
+					],
+					"query": [
+						{
+							"key": "c",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:58034/api/Autor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:58034/api/Autor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58034",
+					"path": [
+						"api",
+						"Autor"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

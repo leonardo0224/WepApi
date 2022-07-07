@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Log4Net_Logging" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.6" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
